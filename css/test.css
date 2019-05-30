@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: "Playfair Display", monospace;
+    font-family: "Signika", sans-serif;
   }
   
   .top-add {
@@ -765,6 +765,7 @@ body {
   }
   
   .heli-bullets {
+    background-color: #020627;
     height: auto !important;
     display: flex;
     flex-wrap: wrap;
@@ -852,7 +853,7 @@ body {
   
   .heli-logo img {
     height: auto;
-    width: 150px !important;
+    width: 350px !important;
   }
   
   .about-text {
@@ -871,7 +872,9 @@ body {
   }
   .location-body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/locations/map_background.JPG);
-
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .location-wrapper{
@@ -884,6 +887,7 @@ body {
     padding: 40px;
     
   }
+  
   .location1{
     padding: 20px;
     width: 250px;
