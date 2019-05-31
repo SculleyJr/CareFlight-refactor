@@ -1,13 +1,12 @@
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
     'contact nav members social'
     'contact nav members social'
     '. copyright copyright .';
 
-  /* background: rgba(119, 119, 119, 0.2); */
   background: #021236;
   justify-items: center;
   color: rgb(209, 209, 209) !important;
@@ -59,7 +58,6 @@
 
 .members-item {
   list-style: none;
-  /* color: #12195d @i; */
 }
 
 .members-item-link {
@@ -92,20 +90,69 @@
 
   margin: 3rem 0 1.5rem 0;
   font-weight: 700;
-  width: 100%;
 }
 
 .copyright-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
 .copyright-item {
+  text-align: center;
+  white-space: nowrap;
 }
 
 .vertical-rule {
   width: 2px;
   background: #ffffff;
   display: inline-block;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 725px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'contact nav'
+      'members social'
+      'copyright copyright';
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .copyright-list {
+    flex-direction: column;
+  }
+
+  .vertical-rule {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'contact'
+      'nav'
+      'members'
+      'social'
+      'copyright';
+  }
+
+  .footer-social {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .social-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+  }
 }
