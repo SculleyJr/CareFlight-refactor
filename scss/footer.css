@@ -1,0 +1,158 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(max-content, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'contact nav members social'
+    'contact nav members social'
+    '. copyright copyright .';
+
+  background: #021236;
+  justify-items: center;
+  color: rgb(209, 209, 209) !important;
+}
+
+.footer-contact {
+  grid-area: contact;
+}
+
+.footer-contact > .address {
+  display: grid;
+  justify-items: center;
+}
+
+.footer-nav {
+  grid-area: nav;
+}
+
+.footer-nav-list {
+  display: grid;
+  justify-items: center;
+}
+
+.footer-members {
+  grid-area: members;
+}
+
+.footer-link {
+  color: rgb(209, 209, 209) !important;
+}
+
+.footer-link:hover {
+  color: #2c993e !important;
+}
+
+.footer-header {
+  color: #2c993e !important;
+}
+
+.member-header {
+}
+
+.members {
+  display: grid;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.members-item {
+  list-style: none;
+}
+
+.members-item-link {
+}
+
+.footer-social {
+  grid-area: social;
+}
+
+.social-list {
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+
+.social-icon {
+  color: #ffffff !important;
+}
+
+.fa-facebook-square:hover {
+  color: #405d9b !important;
+}
+
+.fa-instagram:hover {
+  color: #a59057cc !important;
+}
+
+.copyright {
+  grid-area: copyright;
+
+  margin: 3rem 0 1.5rem 0;
+  font-weight: 700;
+}
+
+.copyright-list {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.copyright-item {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.vertical-rule {
+  width: 2px;
+  background: #ffffff;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 725px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'contact nav'
+      'members social'
+      'copyright copyright';
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .copyright-list {
+    flex-direction: column;
+  }
+
+  .vertical-rule {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'contact'
+      'nav'
+      'members'
+      'social'
+      'copyright';
+  }
+
+  .footer-social {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .social-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+  }
+}
