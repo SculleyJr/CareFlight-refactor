@@ -392,10 +392,12 @@ body {
   .logo-img {
     height: 200px;
   }
-  
+  .footer-img img{
+    position: relative;
+    bottom: 0;
+  }
   .footer {
     width: 100% !important;
-    padding: 60px 0 0 0;
     height: auto;
     background-color: #12195d;
     color: white;
@@ -484,6 +486,8 @@ body {
   .cal-test2 {
     padding-top: 6%;
   }
+
+
   
   .main-container-wrapper {
     background-color: #F8FAFA;
