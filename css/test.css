@@ -399,8 +399,13 @@ body {
 }
 
 /* .footer {
+=======
+  .footer-img img{
+    position: relative;
+    bottom: 0;
+  }
+  .footer {
     width: 100% !important;
-    padding: 60px 0 0 0;
     height: auto;
     background-color: #12195d;
     color: white;
@@ -501,6 +506,72 @@ body {
   border-width: 1px;
 }
 @media (min-width: 415px) {
+=======
+  .list-style :hover {
+    color: grey;
+  }
+  .address :hover{
+      color: white !important;
+  }
+  .list-style > li {
+    list-style: none !important;
+  }
+  .list-style > li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footer-links a:hover {
+    color: grey;
+  }
+  
+  .sponsor-links a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .social-icons a {
+    font-size: 30pt;
+    letter-spacing: 40px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  .social-icons a:hover {
+    color: grey;
+  }
+  
+  .form-style {
+    color: red;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .calendar-test {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cal-test1 {
+    flex-grow: 1 1 70%;
+    width: 300px !important;
+  }
+  
+  .cal-test2 {
+    padding-top: 6%;
+  }
+
+
+  
   .main-container-wrapper {
     -moz-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
     -webkit-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);

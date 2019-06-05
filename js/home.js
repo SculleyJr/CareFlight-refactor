@@ -25,11 +25,9 @@ function loadEvent() {
                     this.title = title;
                 }
             }
-
+            console.log('events',events)
+            
             events.items.forEach(function(event){
-
-                
-
                 try{
                     date = event.start.dateTime.split("T",2);
                     var date1 = new Date(event.start.dateTime);
@@ -56,25 +54,16 @@ function loadEvent() {
 
                  let eventInput = new EventOne(calDay, calMonth, calYear, location , event.summary)
                  
-
-                 
-                 
-                 
                  //this month
                  if(calYear === year && calMonth === month){
                  eventArrayTwo.push(eventInput);
-
                     };
 
                     //next month
                  if(calYear === year && calMonth === month +1){
-                   
                     eventArrayOne.push(eventInput);
                     console.log(month + 1);
-
                     };
-
-
             });
 
             
